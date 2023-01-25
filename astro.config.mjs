@@ -1,9 +1,9 @@
 import { defineConfig } from 'astro/config';
-import deno from '@astrojs/deno';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://go.philip.id',
 	output: 'server',
-	adapter: deno(),
+	adapter: vercel(),
 });
