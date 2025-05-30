@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Set destination for COPY
 WORKDIR /app
 
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 RUN apt-get update
