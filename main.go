@@ -40,8 +40,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	data := PageData{
 		URL:    fmt.Sprintf("%s/%s", BASE_URL, slug),
-		GitHub: fmt.Sprintf("pkg.go.dev/%s/%s", BASE_URL, slug),
-		Pkg:    fmt.Sprintf("%s/%s", GITHUB_URL, slug),
+		Pkg:    fmt.Sprintf("pkg.go.dev/%s/%s", BASE_URL, slug),
+		GitHub: fmt.Sprintf("%s/%s", GITHUB_URL, slug),
 	}
 
 	tmpl, err := template.New("page").Parse(htmlTemplate)
